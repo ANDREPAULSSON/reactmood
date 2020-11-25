@@ -1,0 +1,18 @@
+.navigationBarWrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: rgba(128, 128, 128, 0.568);
+}
+
+.logotype {
+  width: 100px;
+  cursor: pointer;
+  grid-column: 2/4;
+}
+
+.signIn {
+  cursor: pointer;
+  grid-column: 8/11;
+  justify-self: center;
+  align-self: center;
+}
