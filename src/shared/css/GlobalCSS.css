@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -17,8 +19,15 @@ code {
 .hidden{
   visibility: hidden;
 }
-.mw-85{
-  max-width: 85rem;
+.mw-75{
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
+
+/*
+  orange #EF7845
+  redish #FF7164
+*/

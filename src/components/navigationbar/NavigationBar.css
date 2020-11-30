@@ -1,10 +1,11 @@
 header {
-  max-width: 85rem;
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   background-color: transparent;
+  user-select: none;
 }
 .navigationBarWrapper {
   display:flex;
@@ -14,8 +15,16 @@ header {
 }
 
 .logotype {
-  width: 100px;
+  max-width: 250px;
   cursor: pointer;
+}
+.site-name{
+  font-family: pacifico;
+  margin-right: auto;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: auto;
+
 }
 .signIn {
   cursor: pointer;

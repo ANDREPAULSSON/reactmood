@@ -17,7 +17,7 @@ export const SignInView = () => {
 	}
 
 	return (
-		<div className="mw-85">
+		<div className="mw-75">
 			<form>
 				<span>Username: </span>
 				<input onChange={(event) => setUsername(event.target.value)} /> <br />

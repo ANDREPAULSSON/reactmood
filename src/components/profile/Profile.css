@@ -3,14 +3,17 @@
   width: fit-content;
   justify-content: space-between;
 }
-.profileImg {
+.profile-img {
   border-radius: 50%;
   box-shadow: -2px 0px 4px #bbbbbb;
   cursor: pointer;
   height: 50px;
   width: 50px;
+  border:1px solid transparent;
 }
-
+.profile-img:active{
+  transform: scale(1.1);
+}
 .profile-nav {
   display: flex;
   flex-direction: row;
@@ -28,7 +31,7 @@
   opacity: .7;
   color: rgb(179, 179, 179);
   transition: .1s ease;
-  text-transform: uppercase;
+  text-transform: lowercase
 }
 .profile-nav span:first-child{
   user-select: none;

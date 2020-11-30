@@ -26,7 +26,7 @@ export const Profile = () => {
 			</div>
 			<img 
 				onClick={()=> setVisible(!visible)}
-				className="profileImg"
+				className="profile-img"
 				src={'https://thispersondoesnotexist.com/image'}
 				alt={'Error...'}
 			/>						
