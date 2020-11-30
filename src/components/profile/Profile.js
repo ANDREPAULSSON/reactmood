@@ -15,17 +15,17 @@ export const Profile = () => {
 		history.push(RoutingPath.HomeView)
 	}
 
-	const [show, setShow] = useState(false)
+	const [visible, setVisible] = useState(false)
 
 	return (
 		<div className="user-box">
-			<div className={show ? 'profile-nav visible' : 'profile-nav hidden'}>
+			<div className={visible ? 'profile-nav visible' : 'profile-nav hidden'}>
 				<span>{authenticatedUser}</span>
 				<span onClick={() => history.push(RoutingPath.SettingsView)}>Settings</span>
 				<span onClick={() => logout()}>Logout</span>
 			</div>
 			<img 
-				onClick={()=> setShow(!show)}
+				onClick={()=> setVisible(!visible)}
 				className="profileImg"
 				src={'https://thispersondoesnotexist.com/image'}
 				alt={'Error...'}

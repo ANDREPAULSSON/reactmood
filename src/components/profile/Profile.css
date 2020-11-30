@@ -28,11 +28,11 @@
   opacity: .7;
   color: rgb(179, 179, 179);
   transition: .1s ease;
+  text-transform: uppercase;
 }
 .profile-nav span:first-child{
   user-select: none;
   cursor: auto;
-  text-transform: uppercase;
   opacity: 1;
   color: black;
 }
