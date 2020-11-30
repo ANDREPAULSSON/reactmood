@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.visible{
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
+.mw-85{
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+}

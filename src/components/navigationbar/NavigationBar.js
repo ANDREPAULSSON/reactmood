@@ -18,13 +18,15 @@ export const NavigationBar = () => {
 	}
 
 	return (
-		<div className="navigationBarWrapper">
-			<img
-				onClick={() => history.push(RoutingPath.HomeView)}
-				className="logotype"
-				src={Logotype}
-				alt={'Error...'} />
-			{displayUserIfAuthenticated()}
-		</div>
+		<header className="site-header">
+			<div className="navigationBarWrapper">
+				<img
+					onClick={() => history.push(RoutingPath.HomeView)}
+					className="logotype"
+					src={Logotype}
+					alt={'Error...'} />
+				{displayUserIfAuthenticated()}
+			</div>
+		</header>
 	)
 }

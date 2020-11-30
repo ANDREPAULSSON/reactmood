@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { UserContext } from '../../shared/provider/UserProvider'
 import { useHistory } from 'react-router-dom'
 import RoutingPath from '../../routes/RoutingPath'
@@ -15,17 +15,21 @@ export const Profile = () => {
 		history.push(RoutingPath.HomeView)
 	}
 
+	const [show, setShow] = useState(false)
+
 	return (
-		<div className="signIn">
-			<img className="profileImg"
-				src={'https://thispersondoesnotexist.com/image'}
-				alt={'Error...'}
-				style={{ width: 35 }} />
-			<span>{authenticatedUser}</span>
-			<div className="profileDropDown">
+		<div className="user-box">
+			<div className={show ? 'profile-nav visible' : 'profile-nav hidden'}>
+				<span>{authenticatedUser}</span>
 				<span onClick={() => history.push(RoutingPath.SettingsView)}>Settings</span>
 				<span onClick={() => logout()}>Logout</span>
 			</div>
+			<img 
+				onClick={()=> setShow(!show)}
+				className="profileImg"
+				src={'https://thispersondoesnotexist.com/image'}
+				alt={'Error...'}
+			/>						
 		</div>
 	)
 }
