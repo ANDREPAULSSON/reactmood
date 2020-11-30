@@ -1,9 +1,10 @@
 import React from 'react'
+import {JokeBox} from '../components/jokebox/JokeBox'
 
 export const HomeView = () => {
 	return (
 		<div className="mw-75">
-			<h1>HomeView!</h1>
+			<JokeBox/>
 		</div>
 	)
 }
