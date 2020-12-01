@@ -9,7 +9,7 @@ export const JokeBox = () => {
 	const [type, ] = useState('')
 	const [loading, setLoading] = useState(true)
 
-	const fetchDataFromRageAPI = async () => {
+	const fetchDataFromJokeAPI = async () => {
 		setLoading(true)
 		try {
 			const response = await JokeService.jokeType(type.toLowerCase())
@@ -36,9 +36,9 @@ export const JokeBox = () => {
 		<div className="jokeBox">
 			<span className="joke-types-header">JokeBox.</span>
 			<div className="joke-types">
-				<button onClick={()=> fetchDataFromRageAPI()}>Any</button>
-				<button onClick={()=> fetchDataFromRageAPI()}>Dark</button>
-				<button onClick={()=> fetchDataFromRageAPI()}>Spooky</button>
+				<button onClick={()=> fetchDataFromJokeAPI()}>Any</button>
+				<button onClick={()=> fetchDataFromJokeAPI()}>Dark</button>
+				<button onClick={()=> fetchDataFromJokeAPI()}>Spooky</button>
 			</div>
 			{/* <input onChange={(event) => setSearch(event.target.value)} disabled/> */}
 				

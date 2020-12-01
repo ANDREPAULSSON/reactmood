@@ -1,31 +1,35 @@
 .jokeBox{
-	padding:2em;
-	max-width: 500px;
+	width: 350px;
 }
 .joke-container{
 	display: flex;
 	flex-direction:column;
 }
 .joke-types-header{
+	font-weight: 500;
 	font-family: pacifico;
-	font-size: 1.3em;
+	font-size: 2em;
+	opacity: .4;
 }
 .joke-types{
 	display:flex;
 	justify-content: space-between;
 	max-width: fit-content;
 	margin-bottom: 1em;
+	margin-top: .5em;
 }
 .joke-types button{
-	height: 25px;
+	height: 32px;
 	width: 125px;
 	cursor: pointer;
 	background: rgb(238, 238, 206);
 	border:none;
 	margin-right: .5em;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: Segoe UI;
+	font-size: .9em;
 	text-transform: lowercase;
+	border-radius: 5px;
 }
 .joke-types button:active{
 	transform: scale(0.9);

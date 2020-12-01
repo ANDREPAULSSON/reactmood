@@ -1,19 +1,31 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
-import RoutingPath from '../../routes/RoutingPath'
+import React, { useState } from 'react'
 import './ToolNavigation.css'
+import {JokeBox} from '../jokebox/JokeBox'
+import 'font-awesome/css/font-awesome.min.css'
 
 export const ToolNavigation = () => {
-	const history = useHistory()
+	// const history = useHistory()
+	const [visible, setVisible] = useState(true)
 
 	return (
 
 		<div className="tool-box">
-			<span className="tool-box-header">Select tool</span>
 			<div className="tool-nav">
-				<span className ="tool"onClick={() => history.push(RoutingPath.JokeBoxView)}>Jokebox</span>		
-				<span className ="tool"onClick={() => history.push(RoutingPath.JokeBoxView)}>Jokebox</span>
-				<span className ="tool"onClick={() => history.push(RoutingPath.JokeBoxView)}>Jokebox</span>
+				<div className="tool">
+					<span className="arrow-down"><i className="fa fa-angle-double-down"></i>	</span>		
+					<span className ="tool-name jokebox"onClick={()=> setVisible(!visible)}>Jokebox</span>	
+					<div className={visible ? 'tool-drop display-none' : 'tool-drop display-block'}>
+						<JokeBox/>
+					</div>									
+				</div>		
+				<div className="tool">		
+					<span className="arrow-down"><i className="fa fa-angle-double-down"></i>	</span>		
+					<span className ="tool-name undefined">Coming..</span>
+				</div>	
+				<div className="tool">
+					<span className="arrow-down"><i className="fa fa-angle-double-down"></i>	</span>		
+					<span className ="tool-name undefined">Coming..</span>
+				</div>	
 			</div>
 		</div>
 

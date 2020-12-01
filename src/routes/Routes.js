@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { HomeView } from '../views/HomeView'
-import { JokeBoxView } from '../views/JokeBoxView'
 import { SettingsView } from '../views/SettingsView'
 import { SignInView } from '../views/SignInView'
 import RoutingPath from './RoutingPath'
@@ -28,7 +27,6 @@ export const Routes = (props) => {
 		<Router>
 			{props.children}
 			<Switch>
-				<Route exact path={RoutingPath.JokeBoxView} component={JokeBoxView} />
 				<Route exact path={RoutingPath.SignInView} component={SignInView} />
 				<Route exact path={RoutingPath.PageNotFoundView} component={PageNotFoundView} />
 				<Route exact path={RoutingPath.SettingsView} component={blockRouteIfNotAuthenticated(SettingsView)} />

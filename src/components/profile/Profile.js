@@ -15,7 +15,7 @@ export const Profile = () => {
 		history.push(RoutingPath.HomeView)
 	}
 
-	const [visible, setVisible] = useState(false)
+	const [visible, setVisible] = useState(true)
 
 	return (
 		<div className="user-box">

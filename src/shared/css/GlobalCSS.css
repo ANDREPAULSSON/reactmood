@@ -19,6 +19,12 @@ code {
 .hidden{
   visibility: hidden;
 }
+.display-none{
+display: none;
+}
+.display-block{
+display: block;
+}
 .mw-75{
   max-width: 75rem;
   margin-left: auto;
