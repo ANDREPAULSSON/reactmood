@@ -19,12 +19,12 @@ export const ToolNavigation = () => {
 					</div>									
 				</div>		
 				<div className="tool">		
-					<span className="arrow-down"><i className="fa fa-angle-double-down"></i>	</span>		
-					<span className ="tool-name undefined">Coming..</span>
+					<span className="arrow-down undefined"><i className="fa fa-angle-double-down"></i>	</span>		
+					<span className ="tool-name undefined">Tba...</span>
 				</div>	
 				<div className="tool">
-					<span className="arrow-down"><i className="fa fa-angle-double-down"></i>	</span>		
-					<span className ="tool-name undefined">Coming..</span>
+					<span className="arrow-down undefined"><i className="fa fa-angle-double-down"></i>	</span>		
+					<span className ="tool-name undefined">Tba...</span>
 				</div>	
 			</div>
 		</div>

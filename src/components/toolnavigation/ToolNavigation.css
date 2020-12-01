@@ -1,13 +1,11 @@
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-@keyframes fadeIn {
-    from { height:  0; }
-      to { height:  100%; }
-}
-
-
+	from { opacity: 0; }
+	  to { opacity: 1; }
+  }
+  @keyframes fadeIn {
+	from { opacity:  0; }
+	  to { opacity: auto;}
+  }
 .tool-box{
 	margin-top: 10%;
 }
@@ -69,7 +67,7 @@
 .arrow-down{
 	text-align: center;
 	margin-bottom: .3em;
-	opacity: .4;	
+	color:rgb(224, 165, 75);
 	transition: .2s ease-in-out;
 }
 .arrow-down i{
