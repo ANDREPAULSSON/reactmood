@@ -22,6 +22,7 @@ export const NavigationBar = () => {
 		<header className="site-header">
 			<div className="navigationBarWrapper">
 				<span className="site-name" onClick={() => history.push(RoutingPath.HomeView)}>{siteName}</span>
+				
 				{displayUserIfAuthenticated()}				
 			</div>
 		</header>

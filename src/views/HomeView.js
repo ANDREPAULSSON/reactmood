@@ -1,10 +1,10 @@
 import React from 'react'
-import {JokeBox} from '../components/jokebox/JokeBox'
+import {ToolNavigation} from '../components/toolnavigation/ToolNavigation'
 
 export const HomeView = () => {
 	return (
 		<div className="mw-75">
-			<JokeBox/>
+			<ToolNavigation/>
 		</div>
 	)
 }

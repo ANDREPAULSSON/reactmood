@@ -1,42 +1,52 @@
+.jokeBox{
+	padding:2em;
+	max-width: 500px;
+}
 .joke-container{
 	display: flex;
 	flex-direction:column;
 }
 .joke-types-header{
-	text-align: center;
+	font-family: pacifico;
+	font-size: 1.3em;
 }
 .joke-types{
 	display:flex;
 	justify-content: space-between;
 	max-width: fit-content;
-	margin-top: .5em;
 	margin-bottom: 1em;
 }
 .joke-types button{
 	height: 25px;
 	width: 125px;
 	cursor: pointer;
-	background: beige;
+	background: rgb(238, 238, 206);
 	border:none;
 	margin-right: .5em;
+	font-weight: 700;
+	font-family: Segoe UI;
+	text-transform: lowercase;
+}
+.joke-types button:active{
+	transform: scale(0.9);
 }
 .joke-types button:focus{
 	outline: none;
-	background-color: yellow;
 }
 .joke-typs button:last-child{
 	margin-right:none;
 }
 .joke{
 	font-family: monospace;
+	letter-spacing: -0.02em;
 	font-weight: 400;
-	font-style: .9em;
+	font-size: 1.1em;
 	max-width: 400px;
 }
-.joke-setup{
-	letter-spacing: -0.02em;
-}
+/* .joke-setup{
+} */
 .joke-delivery{
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-weight: 700;
+	font-style: italic;
 }

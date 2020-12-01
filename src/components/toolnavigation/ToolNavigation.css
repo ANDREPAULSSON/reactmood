@@ -1,0 +1,37 @@
+.tool-box{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10%;
+}
+.tool-box-header{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2em;
+	font-size: 2em;
+	font-weight: 500;
+	font-family: Segoe UI;
+	letter-spacing: 1.3em;
+	text-transform: uppercase;
+	opacity: .4;
+}
+.tool-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.tool-nav span{
+	cursor: pointer;
+	font-family: pacifico;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	font-size: 3em;
+	background-color: teal;
+	padding:2em;
+}
+.tool-nav span:last-child{
+	margin-right: 0;
+}
+/* .tool-nav span:active{
+	
+} */

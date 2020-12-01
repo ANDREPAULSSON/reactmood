@@ -33,12 +33,12 @@ export const JokeBox = () => {
 
 	return (
 
-		<div>
-			<span className="joke-types-header">Have a laugh!</span>
+		<div className="jokeBox">
+			<span className="joke-types-header">JokeBox.</span>
 			<div className="joke-types">
-				<button onClick={()=> fetchDataFromRageAPI()}>Have a laugh!</button>
-				<button onClick={()=> fetchDataFromRageAPI()}>Have a laugh!</button>
-				<button onClick={()=> fetchDataFromRageAPI()}>Have a laugh!</button>
+				<button onClick={()=> fetchDataFromRageAPI()}>Any</button>
+				<button onClick={()=> fetchDataFromRageAPI()}>Dark</button>
+				<button onClick={()=> fetchDataFromRageAPI()}>Spooky</button>
 			</div>
 			{/* <input onChange={(event) => setSearch(event.target.value)} disabled/> */}
 				
