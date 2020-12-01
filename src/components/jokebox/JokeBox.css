@@ -10,6 +10,7 @@
 	font-family: pacifico;
 	font-size: 2em;
 	opacity: .4;
+	-webkit-user-select: none;
 }
 .joke-types{
 	display:flex;
@@ -22,7 +23,7 @@
 	height: 32px;
 	width: 125px;
 	cursor: pointer;
-	background: rgb(238, 238, 206);
+	background:  rgba(204, 164, 104, 0.329);
 	border:none;
 	margin-right: .5em;
 	font-weight: 600;
@@ -30,6 +31,7 @@
 	font-size: .9em;
 	text-transform: lowercase;
 	border-radius: 5px;
+	-webkit-user-select: none;
 }
 .joke-types button:active{
 	transform: scale(0.9);

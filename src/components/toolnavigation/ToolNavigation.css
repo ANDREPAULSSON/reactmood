@@ -1,3 +1,13 @@
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { height:  0; }
+      to { height:  100%; }
+}
+
+
 .tool-box{
 	margin-top: 10%;
 }
@@ -30,9 +40,10 @@
 	-webkit-user-select: none;
 	margin-bottom: .3em;
 	transition: .1s ease-in-out;
+	color:rgb(224, 165, 75);
 }
-.tool-name:active{
-	transform: scale(.96);
+.tool-name.active{
+	box-shadow: 0px 1px 6px black;
 }
 @media (max-width: 1000px){
 	.tool-nav{
@@ -48,9 +59,6 @@
 .tool-name:last-child{
 	margin-right: 0;
 }
-.jokebox{
-	color: rgb(224, 165, 75);
-}
 .undefined{
 	opacity: .3 !important;
 	color: gray !important;
@@ -59,10 +67,19 @@
 
 .arrow-down{
 	text-align: center;
-	margin-bottom: .3em;	
+	margin-bottom: .3em;
+	opacity: .4;	
+	transition: .2s ease-in-out;
 }
 .arrow-down i{
 	font-weight: 700;
 	font-size: 1.5em;
-	opacity: .4;
+}
+.arrow-down.active{
+	color: rgb(224, 165, 75);
+	transform: rotate(540deg);
+	opacity: 1;
+}
+.tool-drop{
+	justify-content: center;
 }
