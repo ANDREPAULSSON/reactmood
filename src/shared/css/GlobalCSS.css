@@ -36,3 +36,11 @@ display: block;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+@-webkit-keyframes fadeIn {
+	from { opacity: 0; }
+	  to { opacity: 1; }
+  }
+  @keyframes fadeIn {
+	from { opacity:  0; }
+	  to { opacity: auto;}
+  }

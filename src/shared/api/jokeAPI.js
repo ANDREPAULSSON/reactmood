@@ -1,7 +1,8 @@
 import Axios from 'axios'
 
 const jokeAPI = Axios.create({
-	baseURL: 'https://sv443.net/jokeapi/v2/joke/Programming?'
+	baseURL: 'https://icanhazdadjoke.com/',
+	headers:{'Accept': 'application/json'}
 })
 
 export default jokeAPI

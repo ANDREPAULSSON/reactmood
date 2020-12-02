@@ -23,15 +23,17 @@
 	height: 32px;
 	width: 125px;
 	cursor: pointer;
-	background:  rgba(204, 164, 104, 0.329);
+	background: transparent;
+	box-shadow: 0px 1px 3px black;
 	border:none;
-	margin-right: .5em;
-	font-weight: 600;
+	font-weight: 500;
 	font-family: Segoe UI;
-	font-size: .9em;
-	text-transform: lowercase;
 	border-radius: 5px;
 	-webkit-user-select: none;
+}
+.joke-types button:nth-child(2){
+	margin-right: .5em;
+	margin-left: .5em;
 }
 .joke-types button:active{
 	transform: scale(0.9);
@@ -39,14 +41,11 @@
 .joke-types button:focus{
 	outline: none;
 }
-.joke-typs button:last-child{
-	margin-right:none;
-}
 .joke{
-	font-family: monospace;
+	font-family: Segoe UI;
 	letter-spacing: -0.02em;
 	font-weight: 400;
-	font-size: 1.1em;
+	font-size: 1em;
 	max-width: 400px;
 }
 /* .joke-setup{

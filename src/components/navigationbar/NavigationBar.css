@@ -24,7 +24,7 @@ header {
   margin-right: auto;
   font-size: 3em;
   cursor: pointer;
-  user-select: auto;
+  -webkit-user-select: none;
 
 }
 .signIn {
