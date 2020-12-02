@@ -7,3 +7,7 @@ export const PageNotFoundView = () => {
 		</div>
 	)
 }
+
+
+// currently not using this because the site is defaulting to HomeView
+// keeping it incase of later use
