@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import JokeService from '../../shared/api/service/jokeService'
 import './JokeBox.css'
+import JokeTypeValue from './JokeTypeValue'
 
 
 export const JokeBox = () => {
@@ -40,10 +41,8 @@ export const JokeBox = () => {
 		<div className="jokeBox">
 			<span className="joke-types-header">JokeBox.</span>
 			<div className="joke-types">
-
-				{/* empty jokeType returns random dad-joke from the api		 */}
-				<button onClick={()=> {setJokeType(''); setGetCounter(getCounter +1)}}>Dad joke</button>
-				<button onClick={()=> {setJokeType('pirate'); setGetCounter(getCounter +1)}}>Pirate joke</button>
+				<button onClick={()=> {setJokeType(JokeTypeValue.Dad); setGetCounter(getCounter +1)}}>Dad joke</button>
+				<button onClick={()=> {setJokeType(JokeTypeValue.Pirate); setGetCounter(getCounter +1)}}>Pirate joke</button>
 			</div>				
 			<div className="joke-container">
 				{loading
