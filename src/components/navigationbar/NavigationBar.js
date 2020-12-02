@@ -16,9 +16,8 @@ export const NavigationBar = () => {
 			: <span className="signIn" onClick={() => history.push(RoutingPath.SignInView)}>Sign in</span>
 	}
 
-	// rectangels combined with react == reactangels
-	// best sitename world.
-	const siteName = 'réactangels'
+
+	const siteName = 'vibin'
 
 	return (
 		<header className="site-header">

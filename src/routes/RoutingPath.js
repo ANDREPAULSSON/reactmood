@@ -1,11 +1,11 @@
 const HomeView = '/'
 const SignInView = '/signin'
-const SettingsView = '/settings'
+const FavoriteView = '/favorites'
 const PageNotFoundView = '/404'
 
 export default {
 	HomeView,
 	SignInView,
-	SettingsView,
+	FavoriteView,
 	PageNotFoundView
 }

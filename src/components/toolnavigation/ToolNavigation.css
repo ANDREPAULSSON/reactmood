@@ -1,5 +1,5 @@
 .tool-box{
-	margin-top: 10%;
+	margin-top: 7%;
 }
 .tool-nav{
 	display: grid;
@@ -53,11 +53,23 @@
 	user-select: none;
 }
 
-.arrow-down{
+.tool-icons{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
 	text-align: center;
 	margin-bottom: .3em;
+}
+.tool-heart{
+	opacity: .4;
+	color: rgb(8, 8, 8);
+	grid-column: 10/10;
+	cursor: pointer;
+}
+.arrow-down{
 	color:rgb(224, 165, 75);
 	transition: .2s ease-in-out;
+	grid-column: 5/7;
+	text-align: center;
 }
 .arrow-down i{
 	font-weight: 700;

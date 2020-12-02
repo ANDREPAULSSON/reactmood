@@ -21,15 +21,15 @@ export const Profile = () => {
 		<div className="user-box">
 			<div className={visible ? 'profile-nav visible' : 'profile-nav hidden'}>
 				<span>{authenticatedUser}</span>
-				<span onClick={() => history.push(RoutingPath.SettingsView)}>Settings</span>
+				<span onClick={() => history.push(RoutingPath.FavoriteView)}>Favorites</span>
 				<span onClick={() => logout()}>Logout</span>
-			</div>
+			</div>				
 			<img 
 				onClick={()=> setVisible(!visible)}
 				className="profile-img"
 				src={'https://thispersondoesnotexist.com/image'}
 				alt={'Error...'}
-			/>						
+			/>							
 		</div>
 	)
 }

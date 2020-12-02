@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import JokeService from '../../shared/api/service/jokeService'
+import JokeService from '../../../shared/api/service/jokeService'
 import './JokeBox.css'
 import JokeTypeValue from './JokeTypeValue'
 
