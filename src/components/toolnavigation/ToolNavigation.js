@@ -10,7 +10,7 @@ export const ToolNavigation = () => {
 			<div className="tool-nav">
 				<BoxGenerator component={<JokeBox />} name={'jokebox'} />
 				<BoxGenerator component={<JokeBox />} name={'testbox'}/>
-				<BoxGenerator component={<JokeBox />} name={'testbox2'}/>
+				<BoxGenerator component={<JokeBox />} name={'testbox'}/>
 			</div>
 		</div>
 
