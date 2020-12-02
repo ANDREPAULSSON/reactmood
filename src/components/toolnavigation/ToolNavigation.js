@@ -8,9 +8,9 @@ export const ToolNavigation = () => {
 	return (
 		<div className="tool-box">
 			<div className="tool-nav">
-				<BoxGenerator component={<JokeBox />} />
-				<BoxGenerator component={<JokeBox />} />
-				<BoxGenerator component={<JokeBox />} />
+				<BoxGenerator component={<JokeBox />} name={'jokebox'} />
+				<BoxGenerator component={<JokeBox />} name={'testbox'}/>
+				<BoxGenerator component={<JokeBox />} name={'testbox2'}/>
 			</div>
 		</div>
 
