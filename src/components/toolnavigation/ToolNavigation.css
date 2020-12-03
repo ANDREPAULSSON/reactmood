@@ -61,7 +61,6 @@
 }
 .tool-heart{
 	opacity: .4;
-	color: rgb(8, 8, 8);
 	grid-column: 10/10;
 	cursor: pointer;
 }

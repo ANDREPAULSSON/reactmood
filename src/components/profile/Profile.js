@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { UserContext } from '../../shared/provider/UserProvider'
 import { useHistory } from 'react-router-dom'
 import RoutingPath from '../../routes/RoutingPath'
@@ -14,6 +14,11 @@ export const Profile = () => {
 		localStorage.removeItem(BrowserCache.username)
 		history.push(RoutingPath.HomeView)
 	}
+	useEffect(() => {
+		return () => {
+			alert('Bye :(')
+		}
+	}, [])
 
 	const [visible, setVisible] = useState(true)
 

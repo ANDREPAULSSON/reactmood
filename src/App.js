@@ -5,6 +5,7 @@ import { UserProvider } from './shared/provider/UserProvider'
 import './shared/css/GlobalCSS.css'
 
 function App() {
+
 	return (
 		<UserProvider>
 			<Routes>
