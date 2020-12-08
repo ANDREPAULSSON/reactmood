@@ -1,5 +1,4 @@
 import React, {useEffect,useState} from 'react'
-//import {useFetch} from '../../../hooks/useFetch'
 import QuoteService from '../../../shared/api/service/quoteService'
 import QuoteTypeValue from './QuoteTypeValue'
 import '../../boxes/Boxes.css'
