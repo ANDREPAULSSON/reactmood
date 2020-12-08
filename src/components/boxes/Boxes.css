@@ -2,6 +2,7 @@
 	min-height: 250px;
 	max-width: 370px;
 	width: 100%;
+	padding: 1em;
 }
 .box-inside{
 	display: flex;
@@ -13,6 +14,7 @@
 	font-size: 2em;
 	opacity: .4;
 	-webkit-user-select: none;
+	display: none;
 }
 .box-inside-types{
 	display:flex;
@@ -22,15 +24,15 @@
 	margin-top: .5em;
 }
 .box-inside-types button{
+	background-color: transparent;
 	height: 32px;
 	width: 125px;
 	cursor: pointer;
-	background: black;
 	box-shadow: 0px 1px 2px black;
 	border:none;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: Segoe UI;
-	color:#adadadb7 ;
+	color:#282c34 ;
 	letter-spacing: -0.02em;
 	border-radius: 5px;
 	-webkit-user-select: none;

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { HomeView } from '../views/HomeView'
-import { FavoriteView } from '../views/FavoriteView'
+import { WorkflowView } from '../views/WorkflowView'
 import { SignInView } from '../views/SignInView'
 import RoutingPath from './RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
@@ -29,7 +29,7 @@ export const Routes = (props) => {
 			<Switch>
 				<Route exact path={RoutingPath.SignInView} component={SignInView} />
 				<Route exact path={RoutingPath.PageNotFoundView} component={PageNotFoundView} />
-				<Route exact path={RoutingPath.FavoriteView} component={blockRouteIfNotAuthenticated(FavoriteView)} />
+				<Route exact path={RoutingPath.WorkflowView} component={blockRouteIfNotAuthenticated(WorkflowView)} />
 				<Route component={HomeView} />
 			</Switch>
 		</Router>

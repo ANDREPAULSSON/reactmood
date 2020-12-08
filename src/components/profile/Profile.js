@@ -26,7 +26,7 @@ export const Profile = () => {
 		<div className="user-box">
 			<div className={visible ? 'profile-nav visible' : 'profile-nav hidden'}>
 				<span>{authenticatedUser}</span>
-				<span onClick={() => history.push(RoutingPath.FavoriteView)}>Favorites</span>
+				<span onClick={() => history.push(RoutingPath.WorkflowView)}>Workflow</span>
 				<span onClick={() => logout()}>Logout</span>
 			</div>				
 			<img 
