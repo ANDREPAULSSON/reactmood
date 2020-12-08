@@ -22,14 +22,6 @@ export const SaveFavorites = (item) => {
 		localStorage.setItem('items', JSON.stringify(items))
 	}, [items])
 
-
-	// const Testing = (name) =>{
-	// 	const newList = list.concat(name)
-	// 	setList(newList)
-	// 	localStorage.setItem(BrowserCache.favorites, newList)
-		
-	// }
-
 	const [favorite, setFavorite] = useState(false)
 	
 	return (

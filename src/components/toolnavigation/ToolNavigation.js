@@ -1,6 +1,7 @@
 import React from 'react'
 import './ToolNavigation.css'
 import { JokeBox } from '../boxes/jokebox/JokeBox'
+import {QuoteBox} from '../boxes/quotebox/QuoteBox'
 import 'font-awesome/css/font-awesome.min.css'
 import { BoxGenerator } from '../boxgenerator/BoxGenerator'
 
@@ -9,7 +10,7 @@ export const ToolNavigation = () => {
 		<div className="tool-box">
 			<div className="tool-nav">
 				<BoxGenerator component={<JokeBox />} name={'jokebox'} />
-				<BoxGenerator component={<JokeBox />} name={'testbox'}/>
+				<BoxGenerator component={<QuoteBox />} name={'quotebox'}/>
 				<BoxGenerator component={<JokeBox />} name={'testbox'}/>
 			</div>
 		</div>

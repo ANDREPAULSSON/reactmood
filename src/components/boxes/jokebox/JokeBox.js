@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import JokeService from '../../../shared/api/service/jokeService'
-import './JokeBox.css'
+import '../../boxes/Boxes.css'
 import JokeTypeValue from './JokeTypeValue'
 
 
@@ -25,7 +25,7 @@ export const JokeBox = () => {
 	}
 
 	const displayDataWhenDoneLoading = () => {	
-		return <div className="joke">				
+		return <div className="box-inside-text">				
 			<span>{data?.joke}</span>								
 		</div>		
 	}
@@ -38,13 +38,13 @@ export const JokeBox = () => {
 
 	return (
 
-		<div className="jokeBox">
-			<span className="joke-types-header">JokeBox.</span>
-			<div className="joke-types">
+		<div className="box">
+			<span className="box-inside-header">jokeBox.</span>
+			<div className="box-inside-types">
 				<button onClick={()=> {setJokeType(JokeTypeValue.Dad); setGetCounter(getCounter +1)}}>Dad joke</button>
 				<button onClick={()=> {setJokeType(JokeTypeValue.Pirate); setGetCounter(getCounter +1)}}>Pirate joke</button>
 			</div>				
-			<div className="joke-container">
+			<div className="box-inside">
 				{loading
 					? null
 					: displayDataWhenDoneLoading()}
