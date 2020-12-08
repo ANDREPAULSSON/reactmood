@@ -9,7 +9,7 @@ export const JokeBox = () => {
 	const [data, setData] = useState()
 	const [jokeType, setJokeType ] = useState('')
 	const [loading, setLoading] = useState(true)
-	const [getCounter, setGetCounter] = useState(0)
+	const [count, setCount] = useState(0)
 	
 	const fetchDataFromJokeAPI = async () => {
 		setLoading(true)
@@ -31,18 +31,18 @@ export const JokeBox = () => {
 	}
 		
 	useEffect(() => {
-		if(getCounter){
+		if(count){
 			fetchDataFromJokeAPI()
 		}	
-	}, [getCounter])
+	}, [count])
 
 	return (
 
 		<div className="box">
 			<span className="box-inside-header">jokeBox.</span>
 			<div className="box-inside-types">
-				<button onClick={()=> {setJokeType(JokeTypeValue.Dad); setGetCounter(getCounter +1)}}>Dad joke</button>
-				<button onClick={()=> {setJokeType(JokeTypeValue.Pirate); setGetCounter(getCounter +1)}}>Pirate joke</button>
+				<button onClick={()=> {setJokeType(JokeTypeValue.Dad); setCount(count +1)}}>Dad joke</button>
+				<button onClick={()=> {setJokeType(JokeTypeValue.Pirate); setCount(count +1)}}>Pirate joke</button>
 			</div>				
 			<div className="box-inside">
 				{loading
