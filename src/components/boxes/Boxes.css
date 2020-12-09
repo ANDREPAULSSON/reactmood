@@ -2,11 +2,15 @@
 	min-height: 250px;
 	max-width: 370px;
 	width: 100%;
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .box-inside{
 	display: flex;
 	flex-direction:column;
+	/* box-shadow: 0 -5px 5px -5px #333; */
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .box-inside-header{
 	font-weight: 500;
@@ -18,24 +22,29 @@
 }
 .box-inside-types{
 	display:flex;
-	justify-content: space-between;
-	max-width: fit-content;
-	margin-bottom: 1em;
-	margin-top: .5em;
+	justify-content: flex-start;
+	margin-bottom: .7em;
+	margin-top: .2em;
+	box-shadow: rgba(41, 41, 41, 0.377) 0px 10px 10px -10px;
+	padding-bottom: .3em
 }
 .box-inside-types button{
 	background-color: transparent;
+	border: none;
 	height: 32px;
-	width: 125px;
+	width: 100px;
 	cursor: pointer;
-	box-shadow: 0px 1px 2px black;
-	border:none;
-	font-weight: 600;
+	font-size: .7em;
+	font-weight: 700;
 	font-family: Segoe UI;
-	color:#282c34 ;
+	color:#00000057;
 	letter-spacing: -0.02em;
 	border-radius: 5px;
 	-webkit-user-select: none;
+	transition: color .1s ease-in-out;
+}
+.box-inside-types button:hover{
+	color:black;
 }
 .box-inside-types button:nth-child(2){
 	margin-right: .5em;
@@ -50,7 +59,14 @@
 .box-inside-text{
 	font-family: Segoe UI;
 	letter-spacing: -0.02em;
-	font-weight: 400;
-	font-size: 1em;
-	max-width: 340px;
+	font-weight: 500;
+	font-size: .9em;
+}
+
+.quote-author{
+	display: flex;
+	justify-content: flex-end;
+	font-family: pacifico;
+	font-weight: 300;
+	margin-top: .5em;
 }

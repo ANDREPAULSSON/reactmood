@@ -27,7 +27,7 @@
 	-webkit-user-select: none;
 	margin-bottom: .3em;
 	color:rgb(224, 165, 75);
-	padding: .3em;
+	padding: .1em;
 }
 .tool-name.active{
 	color:#fc7e2f;

@@ -23,7 +23,7 @@ export const WorkflowView = () => {
 		<div className="mw-75">
 			<div className="page-header">
 				<h1>Workflow</h1>
-				<span>Test implementation, missing key features like remove and add.</span>
+				<span>Drag and drop test implementation, missing key features like remove and add.</span>
 			</div>
 			<div className='drag-n-drop-header'>
 				<DragNDrop data={data} />

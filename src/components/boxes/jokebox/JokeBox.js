@@ -26,7 +26,7 @@ export const JokeBox = () => {
 
 	const displayDataWhenDoneLoading = () => {	
 		return <div className="box-inside-text">				
-			<span>{data?.joke}</span>								
+			<span>{data?.joke}</span>							
 		</div>		
 	}
 		
