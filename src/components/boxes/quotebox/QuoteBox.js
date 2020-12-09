@@ -27,7 +27,7 @@ export const QuoteBox = () => {
 		return <div className="box-inside-text">				
 			<span>{data?.quoteText}</span>
 			<br/>
-			<span className="quote-author"> {`- ${data?.quoteAuthor}`}</span>							
+			<span className="author"> {`- ${data?.quoteAuthor}`}</span>							
 		</div>		
 	}
 
