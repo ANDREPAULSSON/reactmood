@@ -47,10 +47,18 @@
 .tool-name:last-child{
 	margin-right: 0;
 }
-.undefined{
+.placeholder-box{
 	opacity: .3 !important;
 	color: gray !important;
-	user-select: none;
+	user-select: none !important;
+}
+.placeholder-box .tool-name{
+	box-shadow: none;
+	color: rgb(224, 165, 75);
+}
+.placeholder-box .arrow-down.active{
+	transform:none;
+	color: rgb(224, 165, 75);
 }
 
 .tool-icons{

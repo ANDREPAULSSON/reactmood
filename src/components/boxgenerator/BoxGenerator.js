@@ -5,7 +5,7 @@ export const BoxGenerator = (props) => {
 	const [active, setActive] = useState(false)
 
 	return (
-		<div className="tool">
+		<div className={props.className ? ['tool' + ' ' + props.className]  : 'tool'}>
 			<div className="tool-icons">
 				<span className={active ? 'arrow-down active' : 'arrow-down'}><i className="fa fa-angle-double-down"></i>	</span>
 			</div>

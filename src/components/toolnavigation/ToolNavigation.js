@@ -11,7 +11,7 @@ export const ToolNavigation = () => {
 			<div className="tool-nav">
 				<BoxGenerator component={<JokeBox />} name={'jokebox'} />
 				<BoxGenerator component={<QuoteBox />} name={'quotebox'}/>
-				<BoxGenerator component={<JokeBox />} name={'testbox'}/>
+				<BoxGenerator  className={'placeholder-box'} name={'inactive'}/>
 			</div>
 		</div>
 
